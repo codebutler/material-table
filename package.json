@@ -11,6 +11,7 @@
   "scripts": {
     "start": "webpack-dev-server --config ./webpack.config.js --mode development",
     "build": "babel src --out-dir dist",
+    "postinstall": "babel src --out-dir dist",
     "copy": "robocopy dist docs/node_modules/material-table/dist",
     "lint": "eslint src/**",
     "lint:fix": "eslint src/** --fix",
